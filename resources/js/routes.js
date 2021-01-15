@@ -10,8 +10,8 @@ export const route = [
         component: {render: h => h('router-view')},
         children: [
             {
-                name: 'postDashboard',
-                path: 'post/dashboard',
+                name: 'UserIndex',
+                path: 'user/index',
                 component: () => import('./components/Admin/Admin.vue')
             }
         ]

@@ -1,12 +1,14 @@
 <template>
     <div>
-Hello world!
+        <header></header>
+        <sidebar></sidebar>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Home"
+        name: "Admin"
     }
 </script>
 

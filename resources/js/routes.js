@@ -5,14 +5,13 @@ export const route = [
         component: () => import('./components/Public/Home.vue'),
     },
     {
-        name: 'admin',
         path: '/admin',
-        component: {render: h => h('router-view')},
+        component: () => import('./components/Admin/Admin.vue'),
         children: [
             {
-                name: 'UserIndex',
-                path: 'user/index',
-                component: () => import('./components/Admin/Admin.vue')
+                name: 'Users',
+                path: 'users',
+                component: () => import('./components/Admin/Users/Index.vue'),
             }
         ]
     }

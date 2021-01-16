@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header></header>
+        <header>Hello</header>
         <router-view></router-view>
         <footer></footer>
     </div>

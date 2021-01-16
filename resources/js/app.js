@@ -1,19 +1,19 @@
 require('./bootstrap');
 
-require('alpinejs');
-window.Vue = require('vue/dist/vue');
+window.Vue = require('vue').default;
 
 import VueRouter from 'vue-router';
 import VueAxios from 'vue-axios';
 import axios from 'axios';
-import BootstrapVue from 'bootstrap-vue'
 import App from './App.vue';
 import {route} from './routes';
+import Vuesax from 'vuesax';
+import 'vuesax/dist/vuesax.css';
+import 'material-icons/iconfont/material-icons.css';
 
 Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
-
-Vue.use(BootstrapVue);
+Vue.use(Vuesax, {});
 
 const router = new VueRouter({
     mode: 'history',

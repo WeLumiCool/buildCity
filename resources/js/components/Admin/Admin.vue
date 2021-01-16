@@ -1,14 +1,18 @@
 <template>
     <div>
         <header></header>
-        <sidebar></sidebar>
+        <Sidebar></Sidebar>
         <router-view></router-view>
     </div>
 </template>
 
 <script>
+    import Sidebar from "./Sidebar.vue";
     export default {
-        name: "Admin"
+        components: {
+            Sidebar
+        },
+
     }
 </script>
 

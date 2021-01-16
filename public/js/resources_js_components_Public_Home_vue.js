@@ -115,7 +115,13 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    [_c("header"), _vm._v(" "), _c("router-view"), _vm._v(" "), _c("footer")],
+    [
+      _c("header", [_vm._v("Hello")]),
+      _vm._v(" "),
+      _c("router-view"),
+      _vm._v(" "),
+      _c("footer")
+    ],
     1
   )
 }
